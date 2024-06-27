@@ -47,6 +47,57 @@ body {
     box-shadow: 0 0 5px hsl(148, 38%, 91%); /* Lighter green */
 }
 
+input[type=radio] {
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.radio-selected {
+    background-color: hsl(148, 38%, 91%);
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
 #submit-btn { 
     outline: none;
+}
+
+input[type=checkbox] {
+    accent-color: hsl(169, 82%, 27%);
+    width: 15px;
+}
+
+.toast {
+    position: fixed;
+    top: 30px;
+    width: 400px;
+    background-color: hsl(187, 24%, 22%);
+    padding: 20px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    transition: all 1s linear;
+}
+
+.toast > div {
+    display: flex;
+    align-items:  center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toast img {
+    width: 14px;
+}
+
+.toast span {
+    font-weight: bold;
+}
+
+.toast.hidden {
+    transform: translateY(-400px);
+}
+
+@media screen and (max-width: 400px) {
+    .toast {
+        width: 300px;
+    }
 }

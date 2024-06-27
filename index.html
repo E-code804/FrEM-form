@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, 
-          initial-scale=1.0">
-    <title>Tailwind CSS Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JHIM Contact Form</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
@@ -18,15 +17,15 @@
 
             <form class="flex flex-col justify-between">
                 <!-- Inputs for first/last names -->
-                <div class="flex justify-between">
-                    <div>
+                <div class="flex bg-gray-400 w-full justify-between">
+                    <div class="w-full pr-5">
                         <p>First Name</p>
-                        <input required type="text" name="firstname" id="firstname" class="border-black border-2">
+                        <input class="w-full border-black border-2 rounded-md" required type="text" name="firstname" id="firstname">
                     </div>
 
-                    <div>
+                    <div class="w-full">
                         <p>Last Name</p>
-                        <input required type="text" name="lastname" id="lastname" class="border-black border-2 rounded-md">
+                        <input class="w-full border-black border-2 rounded-md" required type="text" name="lastname" id="lastname">
                     </div>
                 </div>
 
